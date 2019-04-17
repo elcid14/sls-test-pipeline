@@ -1,8 +1,7 @@
 
 service: sls-notes-backend # NOTE: update this with your service name
 
-plugins:
-  - serverless-offline
+
 
 custom:
   allowedHeaders:
