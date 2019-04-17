@@ -9,7 +9,7 @@ provider:
   memorySize: 128
   timeout: 5
   endpointType: regional
-  environment:
+  environment: PROD
     NOTES_TABLE: ${self:service}-${opt:stage, self:provider.stage}
 
 resources:
