@@ -34,7 +34,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.NOTES_TABLE}"
-      
+
 functions:
   add-note:
     handler: api/add-note.handler
