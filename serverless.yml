@@ -2,7 +2,6 @@
 service: sls-notes-backend # NOTE: update this with your service name
 
 
-
 custom:
   allowedHeaders:
     - Accept
