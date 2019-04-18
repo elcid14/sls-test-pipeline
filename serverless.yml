@@ -28,6 +28,7 @@ provider:
     - Effect: Allow
       Action: 
         - dynamodb:Query
+        - dynamodb:GetItem
         - dynamodb:PutItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.NOTES_TABLE}"
